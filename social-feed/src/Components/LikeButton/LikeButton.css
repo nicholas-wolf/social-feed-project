@@ -1,0 +1,14 @@
+button {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.active{
+    background-color: rgb(7, 141, 0);
+}
+
+.inactive{
+    background-color: antiquewhite;
+}

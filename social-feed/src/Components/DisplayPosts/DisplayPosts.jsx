@@ -1,10 +1,12 @@
+import LikeButton from '../LikeButton/LikeButton';
+import UnlikeButton from '../UnlikeButton/UnlikeButton';
+import './DisplayPosts.css'
+
 const DisplayPosts = (props) => {
     return (
         <table className="table">
             <thead>
-            <tr>               
-                <th>Name</th>
-                <th>Post</th>
+            <tr>                             
             </tr>
             </thead>
             <tbody>
@@ -12,7 +14,9 @@ const DisplayPosts = (props) => {
                 return (
                 <tr key={index}>
                     <td>{entry.name}</td>
-                    <td>{entry.post}</td>                
+                    <td>{entry.post}</td>
+                    <div><LikeButton/></div>
+                    <div><UnlikeButton/></div>                
                 </tr>
                 );
             })} 

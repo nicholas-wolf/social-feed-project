@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
 
-  const [entries, setEntries] = useState([{name: '', post: ''}])
+  const [entries, setEntries] = useState([])
 
   function addNewEntry(entry){
     
@@ -15,19 +15,18 @@ function App() {
   }
 
   return (
-    <div className='container-fluid'>
-      <div className='row'>
-        <h3 style={{margin: '1em'}}>Social
-        <small className='text-muted'>Feed</small></h3>
-        <div className='col-md-6'>
-          <div className='border-box'>
-            <CreatePost addNewEntryProperty={addNewEntry} />           
-          </div>
-          <div className='border-box'>
-            <DisplayPosts parentEntries={entries} />
-          </div>           
-        </div>
-      </div> 
+    
+    <div style={{backgroundColor:"aqua", left:"0", right:"0", bottom:"0", top:"7%", position:"absolute", borderTop:"0.1rem solid black"}}>
+      <div style={{backgroundColor:"white", position:"fixed", top:"0", width:"100%", bottom:"93%"}}>
+        <h3 style={{margin: '1rem'}}>
+          Social
+          <small  >Feed</small>
+        </h3>
+      </div>
+        <div  style={{width:"50%",  margin:'auto', marginTop:"0.5rem"}}>                    
+          <CreatePost addNewEntryProperty={addNewEntry} />           
+          <DisplayPosts parentEntries={entries} />                    
+        </div> 
     </div>
   );
 }

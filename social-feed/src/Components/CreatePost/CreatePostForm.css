@@ -1,4 +1,13 @@
-.form-grid {
-    display: grid;
-    justify-items: center;
+
+
+.inputPost {
+    width: 80%;
+    
+}
+
+.postForm {
+    border: 0.1rem;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: white
 }

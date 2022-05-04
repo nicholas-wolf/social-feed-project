@@ -3,7 +3,7 @@ import { BsHandThumbsDown } from "react-icons/bs";
 import "./UnlikeButton.css";
 
 
-const UnlikeButton = (props) => {
+const UnlikeButton = () => {
     const [buttonClass, setButtonClass] = useState("inactive");
 
     function handleClick(){
@@ -17,7 +17,9 @@ const UnlikeButton = (props) => {
 
         return (
             <div>
-                <button><BsHandThumbsDown/> className={buttonClass}  onClick={handleClick}>{props.BsHandThumbsDown}</button>
+                <button className={buttonClass}  onClick={handleClick}>
+                    <BsHandThumbsDown/>
+                </button>
             </div>
         )
     }

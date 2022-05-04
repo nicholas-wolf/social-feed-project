@@ -3,12 +3,12 @@ import { BsHandThumbsUp } from "react-icons/bs";
 import "./LikeButton.css";
 
 
-const LikeButton = (props) => {
+const LikeButton = () => {
     const [buttonClass, setButtonClass] = useState("inactive");
 
     function handleClick(){
         if(buttonClass === "inactive"){
-            setButtonClass("active");
+            setButtonClass("likeActive");
         }
         else{
             setButtonClass("inactive")
@@ -17,7 +17,9 @@ const LikeButton = (props) => {
 
         return (
             <div>
-                <button><BsHandThumbsUp/> className={buttonClass}  onClick={handleClick}>{props.message}</button>
+                <button className={buttonClass}  onClick={handleClick}>
+                    <BsHandThumbsUp/> 
+                </button>
             </div>
         )
     }

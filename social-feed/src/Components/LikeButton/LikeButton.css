@@ -1,11 +1,11 @@
-button {
+.button {
     width: 24px;
     height: 24px;
     margin-right: 5px;
     cursor: pointer;
 }
 
-.active{
+.likeActive{
     background-color: rgb(7, 141, 0);
 }
 

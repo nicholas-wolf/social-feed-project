@@ -1,4 +1,9 @@
-.form-grid {
-    display: grid;
-    justify-items: center;
+
+
+.postContainer {
+    border: 0.1rem;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: white;
+
 }

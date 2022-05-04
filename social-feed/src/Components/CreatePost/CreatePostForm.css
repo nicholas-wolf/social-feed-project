@@ -11,3 +11,20 @@
     border-radius: 10px;
     background-color: white
 }
+.divContainer {
+    display: flex;
+    justify-content: left;
+    margin: 0.5rem;
+}
+
+.labelContainer {
+    margin-right: 0.5rem;
+
+}
+
+.buttonDivContainer {
+    display: flex;
+    justify-content: right;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}

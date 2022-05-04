@@ -21,19 +21,19 @@ const CreatePost = (props) => {
 
     return ( 
         <form onSubmit={handleSubmit} className='postForm'>
-            <div style={{display:"flex", justifyContent:"left", margin:"0.5rem"}}>
-                <label style={{marginRight:"0.5rem"}}>Name</label>
+            <div className='divContainer'>
+                <label className='labelContainer'>Name</label>
                 <input style={{width:"75%"}} type='text'  value={name} onChange={(event) => setName(event.target.value)}/>
             </div>
-            <div style={{display:"flex", justifyContent:"left", margin:"0.5rem"}} >
-                <label style={{marginRight:"0.5rem"}}>Post</label>
+            <div className='divContainer'>
+                <label className='labelContainer'>Post</label>
                 <textarea type='text' className='inputPost'  value={post} onChange={(event) => setPost(event.target.value)}/>               
             </div>
-            <div style={{display:"flex", justifyContent:"left", margin:"0.5rem"}} >
-            <label style={{marginRight:"0.5rem"}}>Date</label>
+            <div className='divContainer' >
+            <label className='labelContainer'>Date</label>
                 <input type='date' className="form-control" value={date} onChange={(event) => setDate(event.target.value)}/>
                 </div>
-            <div style={{display:"flex", justifyContent:"right", marginRight:"0.5rem", marginBottom:"0.5rem"}}>                
+            <div className='buttonDivContainer'>                
                 <button class="btn btn-primary" type='submit'  >Create</button>
             </div>               
         </form>

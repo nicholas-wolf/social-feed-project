@@ -1,1 +1,23 @@
+.divTopContainer {
+    background-color: rgb(211, 246, 234);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 7%;
+    position: absolute;
+    border-top: 0.1rem solid black;
+}
 
+.divHeaderContainer {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    bottom: 93%;
+}
+
+.divBody {
+    width: 50%;
+    margin: auto;
+    margin-top: 0.5rem;
+}

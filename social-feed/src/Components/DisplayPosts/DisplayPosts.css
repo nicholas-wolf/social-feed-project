@@ -1,9 +1,28 @@
-
-
 .postContainer {
     border: 0.1rem;
     border-style: solid;
     border-radius: 10px;
     background-color: white;
 
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: right;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: white;
+}
+
+
+.tableContainer {
+    width: 100%;
+    margin: auto;
+    background-color: white;
+}
+
+.nameContainer {
+    text-decoration: underline;
+    display: flex;
+    margin-right: 00.5rem;
 }

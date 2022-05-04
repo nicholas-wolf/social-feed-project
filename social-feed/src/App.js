@@ -16,14 +16,14 @@ function App() {
 
   return (
     
-    <div style={{backgroundColor:"aqua", left:"0", right:"0", bottom:"0", top:"7%", position:"absolute", borderTop:"0.1rem solid black"}}>
-      <div style={{backgroundColor:"white", position:"fixed", top:"0", width:"100%", bottom:"93%"}}>
+    <div className='divTopContainer'>
+      <div className='divHeaderContainer'>
         <h3 style={{margin: '1rem'}}>
           Social
           <small  >Feed</small>
         </h3>
       </div>
-        <div  style={{width:"50%",  margin:'auto', marginTop:"0.5rem"}}>                    
+        <div className='divBody'>                    
           <CreatePost addNewEntryProperty={addNewEntry} />           
           <DisplayPosts parentEntries={entries} />                    
         </div> 

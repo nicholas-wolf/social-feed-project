@@ -4,7 +4,8 @@ services:
 
   social-feed-prod:
     container_name: nwolf083-social-feed-prod
-    build:
+    image: nwolf083/socialfeedprod
+    build: 
       context: .
       dockerfile: Dockerfile
     volumes:

@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+  social-feed-dev:
+    container_name: nwolf083-social-feed-dev
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - '8001:3000'
+  
+  test:
+    container_name: social-feed-dev-test
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    command: ["npm", "run", "test"]

@@ -1,0 +1,11 @@
+# Docker files
+.dockerignore
+Dockerfile
+Dockerfile-dev
+docker-compose.yml
+docker-compose-dev.yml
+
+# Directories
+node_modules
+build
+

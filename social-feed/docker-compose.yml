@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+
+  social-feed-prod:
+    container_name: nwolf-social-feed-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - "8080:80"

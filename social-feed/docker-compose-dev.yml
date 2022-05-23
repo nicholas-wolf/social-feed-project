@@ -10,7 +10,7 @@ services:
       - ./:/app
       - /app/node_modules
     ports:
-      - '8001:3000'
+      - '8080:3000'
   
   test:
     container_name: social-feed-dev-test

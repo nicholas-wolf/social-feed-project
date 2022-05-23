@@ -3,7 +3,7 @@ version: '3.9'
 services:
 
   social-feed-prod:
-    container_name: nwolf-social-feed-prod
+    container_name: nwolf083-social-feed-prod
     build:
       context: .
       dockerfile: Dockerfile

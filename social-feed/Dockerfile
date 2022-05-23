@@ -15,7 +15,7 @@ RUN npm ci
 RUN npm install react-scripts@5.0.1 -g
 
 # Add app
-COPY ./ ./
+COPY . ./
 # Build prod code
 RUN npm run build
 
